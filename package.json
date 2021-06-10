@@ -1,16 +1,23 @@
 {
   "name": "@iotexproject/iotex-address-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts-resolve",
+    "prepublishOnly": "npm run build"
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^15.12.2",
     "tsup": "^4.11.2",
@@ -19,10 +26,5 @@
   "dependencies": {
     "bech32": "^2.0.0",
     "tslint": "^6.1.3"
-  },
-  "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts-resolve",
-    "test": "jest",
-    "prepublishOnly": "npm run build"
   }
 }
