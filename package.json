@@ -1,7 +1,7 @@
 {
   "name": "iotex-address-ts",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^15.12.2",
