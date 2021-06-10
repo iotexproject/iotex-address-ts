@@ -1,5 +1,5 @@
 {
-  "name": "iotex-address",
+  "name": "iotex-address-ts",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
