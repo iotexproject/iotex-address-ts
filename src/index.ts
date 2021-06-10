@@ -63,3 +63,13 @@ export function fromString(addrStr: string): Address {
     const addr = new AddressV1(bech32.fromWords(words));
     return addr;
 }
+
+export function from(addr: string): Address {
+    if (addr.startsWith(AddressV1.PREFIX)) {
+        return fromString(addr);
+    }
+    if (addr.startsWith("0x")) {
+        return fromEthereum(addr);
+    }
+    throw new Error("unknow address format");
+}
