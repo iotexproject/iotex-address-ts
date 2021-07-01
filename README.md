@@ -12,6 +12,8 @@ $ yarn add @iotexproject/iotex-address-ts
 
 ```js
 import { from } from "@iotexproject/iotex-address-ts";
+// for webpack support
+// import { from } from '@iotexproject/iotex-address-ts/dist/index.js';
 
 const addr = from("0xb8744ae4032be5e5ef9fab94ee9c3bf38d5d2ae0");
 console.log(addr.string());
