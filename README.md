@@ -1,5 +1,7 @@
 # iotex-address
 
+Converting between Web3 Address (ETH format) and IoTeX Address (ioXXXXX). 
+
 ### Install
 
 ```js
